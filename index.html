@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+	<title>Meu Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	
+<a href="#" class="btn"></a>
+
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#sobre" data-anime="left">sobre</a></li>
+				<li><a href="https://drive.google.com/drive/folders/1SgbjHXCgi5Gyq24PZHVsVShI-goK9FTe" target="_blank">Certificados</a></li>
+				<li><a href="#portfolio" >Projeto</a></li>
+				<li><a href="#contact">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="backgroundloki">
+
+		
+		<img style="opacity: 0.9;" src="img/bannert port.png">
+		<div><h1></h1></div>
+	
+
+	</section>
+
+	
+	<div id="sobre">
+		
+		<a href="img/Preto e Verde Currículo Simples de Desenvolvedor Web.pdf" download style="">Baixar CV</a>
+
+		<div class="projetos"><h1>Sobre mim</h1></div>
+
+		<h2> Olá, meu nome é Leonardo, tenho 19 anos e estou concluindo minha graduação. Desde o ano passado, tenho me dedicado ao estudo da programação e tenho feito cursos em diversas linguagens, como Javascript, PHP e React e Wordpress além de design para web e design gráfico.</h2>
+
+			<h2>Embora eu ainda não tenha experiência profissional na área, sinto que tenho adquirido um grande conhecimento técnico, e isso tem sido um grande diferencial na busca por uma oportunidade no mercado de trabalho.</h2> <h2>Acredito que minha capacidade de aprendizado rápido e dedicação aos estudos podem me ajudar a me destacar na carreira de programação.
+			
+			Além disso, o fato de ter habilidades em design para web e design gráfico pode ser um diferencial importante para as empresas que buscam profissionais que possam contribuir não só na parte técnica, mas também na criação de interfaces amigáveis e atraentes.
+			
+			Meu objetivo é continuar me aprimorando e buscando novas oportunidades para desenvolver minhas habilidades, consolidando assim minha carreira no mercado de trabalho. Tenho plena confiança de que com meu conhecimento e dedicação, serei capaz de alcançar meus objetivos e conquistar uma posição de destaque na área de programação e design. <img  src="img/2.png"></h2>
+		
+	
+		
+		
+	</div>
+	<section id="portfolio">
+		<div class="projetos" data-anime="left"><h1>Projetos</h1></div>
+
+		<div class="portfolio-item">
+			
+		</div>	
+		<div class="container">
+     
+			<div class="card">
+				
+				<img src="img/download.png">
+				<p>Pokedex via API</p>
+				<h2>criado e desenvolvido usando api pokeapi junto de html e css </h2>
+				<a  href="#" target="_blank" class="card">Ver mais!!</a>
+			</div>
+		</div>
+		
+		<div class="container">
+     
+			<div class="card">
+				
+				<img src="img/instagram-celular.webp">
+				<p>Clone Instagram</p>
+				<h2>criado e desenvolvido usando a lib react, Javascript e firebase</h2>
+				<a  href="#" target="_blank" class="vermais">Ver mais!!</a>
+			</div>
+		</div>
+		
+		<div class="container">
+     
+			<div class="card">
+				
+				<img src="img/bot.png">
+				<p>Bot criado em javascript</p>
+				<h2>criado e desenvolvido usando api pokeapi junto de html e css </h2>
+				<a  href="#" target="_blank" class="vermais">Ver mais!!</a>
+			</div>
+		</div>
+		
+		
+		<div class="projetinhos"><img src="img/1.png" alt="um" style=""></div>
+	</section>
+
+	<section id="contact">
+		<div class="projetos"><h1 style="color: #fff" data-anime="left">Contatos</h1></div>
+		<div class="containercontato">
+			<a href="https://github.com/LeonardoTellesBosch" target="_blank"><img src="img/github-square-svgrepo-com.svg"></a>
+			<a href="https://www.linkedin.com/in/leonardo-bosch-182921218/"target="_blank"><img src="img/linkedin-svgrepo-com (1).svg" target="_blank"></a>
+			<a href="mailto:leo.bosch1227@gmail.com?subject=&body="><img src="img/gmail-svgrepo-com.svg" target="_blank"></a>
+			<a href="https://wa.me/5541996233543?text=Ol%C3%A1%2C+prazer+  "target="_blank"><img src="img/whatsapp-svgrepo-com.svg" =""></a>
+		</div>
+
+		
+		
+		
+	</section>
+
+	<footer>
+		
+		<p>Copyright © 2023 Leonardo Telles Bosch</p>
+
+		
+	</footer>
+
+	<script>
+
+
+		var i = 0;
+		var texto = "Oi eu sou Leonardo.";
+		var vel = 250
+		var H1 = document.querySelector('h1')
+
+
+		function animacaoH1(){
+
+			if(i<texto.length){
+				H1.innerHTML += texto.charAt(i)
+				i++
+				setTimeout(animacaoH1,vel)
+			}else{
+				H1.classList.add('sombra')
+			}
+
+
+		}
+
+		animacaoH1()
+	</script>
+</body>
+</html>
